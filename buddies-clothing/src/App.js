@@ -1,50 +1,42 @@
 
 const App = () => {
+
+  const categories = [
+    {
+      id:1,
+      title: 'Men',
+    },
+    {
+      id:2,
+      title: 'Women',
+    },
+    {
+      id:3,
+      title: 'Caps',
+    },
+    {
+      id:4,
+      title: 'Jackets',
+    },
+    {
+      id:5,
+      title: 'Sneakers',
+    }
+  ]
+
   return (
         <div className="categories-div">{/*container for categories*/}
-
-          <div className="category-div">{/*container for men category*/}
+          {categories.map(({title})=>(
+            <div className="category-div">{/*container for each category*/}
             {/*<img/> placeholder for image that is to be added later  */ }
             <div className="category-body-div">
-              <h2>Men</h2>
-              <p>Buy Now</p>
+              <h2>{title}</h2>
+              <p>Explore</p>
             </div> 
           </div>
-
-          <div className="category-div">{/*container for women category*/}
-            {/*<img/> placeholder for image that is to be added later  */ }
-            <div className="category-body-div">
-              <h2>Women</h2>
-              <p>Buy Now</p>
-            </div> 
-          </div>
-
-
-          <div className="category-div">{/*container for cap category*/}
-            {/*<img/> placeholder for image that is to be added later  */ }
-            <div className="category-body-div">
-              <h2>Caps</h2>
-              <p>Buy Now</p>
-            </div> 
-          </div>
-
-          <div className="category-div">{/*container for jackets category*/}
-            {/*<img/> placeholder for image that is to be added later  */ }
-            <div className="category-body-div">
-              <h2>Jackets</h2>
-              <p>Buy Now</p>
-            </div> 
-          </div>
-
-          <div className="category-div">{/*container for sneakers category*/}
-            {/*<img/> placeholder for image that is to be added later  */ }
-            <div className="category-body-div">
-              <h2>Sneakers</h2>
-              <p>Buy Now</p>
-            </div> 
-          </div>
+          ))}
         </div>   
     );
-}
+};
 
 export default App;
