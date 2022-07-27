@@ -37,7 +37,7 @@ const App = () => {
               <p>Buy Now</p>
             </div> 
           </div>
-        </div>        
+        </div>   
     );
 }
 
