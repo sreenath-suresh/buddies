@@ -3,6 +3,7 @@ import './directory.styles.scss';
 
 const Directory = ({categories}) => {
     return (
+
         <div className='directory-div'>
         {categories.map((category) => (
           <CategoryItem key={category.id} category={category} />
@@ -10,5 +11,4 @@ const Directory = ({categories}) => {
       </div>
     )
 }
-
 export default Directory;
