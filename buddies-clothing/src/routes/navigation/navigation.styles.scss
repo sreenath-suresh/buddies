@@ -1,5 +1,5 @@
 .navigation {
-    height: 150px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,7 @@
       height: 100%;
       width: 150px;
       padding: 5px;
+      margin: -20px 0 -20px -10px;
     }
   
     .nav-links-div {

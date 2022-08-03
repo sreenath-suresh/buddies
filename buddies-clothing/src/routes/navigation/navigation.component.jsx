@@ -4,21 +4,26 @@ import { ReactComponent as BuddiesLogo } from '../../assets/logo.svg';
 import './navigation.styles.scss';
 
 const Navigation = () => {
-    return(
+    return (
       <Fragment>
         <div className='navigation'>
-            <div className='nav-links-div'>
-                <Link className='logo-div' to='/'>
-                    <BuddiesLogo />
-                </Link>
-                <Link className='nav-link' to='/shop'>
-                    Shop
-                </Link>
-            </div>
+          <Link className='logo-div' to='/'>
+            <BuddiesLogo className='logo' />
+          </Link>
+          <div className='nav-links-div'>
+            <Link className='nav-link' to='/shop'>
+              SHOP
+            </Link>
+            <Link className='nav-link' to='/sign-in'>
+              SIGN IN
+            </Link>
+          </div>
         </div>
         <Outlet />
       </Fragment>
     );
   };
+  
+
 
   export default Navigation;
