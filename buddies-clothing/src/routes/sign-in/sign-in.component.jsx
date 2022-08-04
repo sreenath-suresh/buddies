@@ -5,6 +5,9 @@ import {
 
 import SignUpForm from '../../components/sign-up-form/sign-up-form.component';
 
+import Button from '../../components/button/button.component';
+
+
   
   const SignIn = () => {
     const logGoogleUser = async () => {
@@ -15,7 +18,7 @@ import SignUpForm from '../../components/sign-up-form/sign-up-form.component';
     return (
       <div>
         <h1>Sign In Page</h1>
-        <button onClick={logGoogleUser}>Sign in with Google Popup</button>
+        <Button buttonType='google' onClick={logGoogleUser}>Sign in with Google Popup</Button>
         <SignUpForm/>
       </div>
     );
