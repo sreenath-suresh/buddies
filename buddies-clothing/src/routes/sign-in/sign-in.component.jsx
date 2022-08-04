@@ -17,7 +17,9 @@ import Button from '../../components/button/button.component';
   
     return (
       <div>
-        <h1>Sign In Page</h1>
+        <h1>Sign in for a better experience</h1>
+        <br></br>
+        <br></br>
         <Button buttonType='google' onClick={logGoogleUser}>Sign in with Google Popup</Button>
         <SignUpForm/>
       </div>
