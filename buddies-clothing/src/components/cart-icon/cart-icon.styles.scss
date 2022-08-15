@@ -8,19 +8,22 @@
     cursor: pointer;
   
     .shopping-icon {
-      width: 45px;
-      height: 45px;
+      width: 35px;
+      height: 35px;
 
     }
   
     .item-count {
+      background-color: #758bfd;
+      min-width: 25px;
+      padding: 2px 6px;
+      border-radius: 10px;
       position: absolute;
-      font-size: 13px;
-      bottom: 14px;
-      right: 12px;
+      font-size: 11px;
+      bottom: 25px;
+      left: 25px;
       font-family: 'Inter', sans-serif;
-//      font-family: 'Shadows Into Light Two', cursive;   
- 
+      text-align: center; 
     }
   }
   
