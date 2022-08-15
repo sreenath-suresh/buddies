@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
 
@@ -9,6 +10,7 @@ import {
  // createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
 
+import { ReactComponent as GoogleLogo } from '../../assets/google-icon.svg';
 import './sign-in-form.styles.scss';
 
 const defaultFormFields = {
@@ -68,9 +70,14 @@ const SignInForm = () => {
           value={password}
         />
         <div className='buttons-container'>
-          <Button type='submit'>Sign In</Button>
-          <Button buttonType='google' type='button' onClick={signInWithGoogle}>
-            Google Sign In
+          <Button  type='submit'>Sign In</Button>
+          <Button  buttonType='google' type='button' onClick={signInWithGoogle}>
+          <div className='google-icon-container'>
+            <GoogleLogo className='google-icon' />
+          </div>
+          <span className='google-text'>
+            Sign in with Google
+          </span>
           </Button>
         </div>
       </form>
