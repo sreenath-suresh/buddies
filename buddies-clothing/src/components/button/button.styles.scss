@@ -1,6 +1,6 @@
 .button-container {
     min-width: 165px;
-    width: auto;
+    width: 100%;
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
@@ -24,12 +24,13 @@
     }
   
     &.google-sign-in {
-      background-color: #c3cdfe;
+      background-color: #FFF;
       color: black;
   
       &:hover {
-        background-color: #758bfd;
-        border: 1px solid black;      }
+        background-color: #4285F4;
+        border: 1px solid #000;
+        color: #FFF;      }
     }
   
     &.inverted {
@@ -39,7 +40,7 @@
   
       &:hover {
         background-color: black;
-        color: c3cdfe;
+        color: #c3cdfe;
         border: 1px solid black;      }
     }
   }
