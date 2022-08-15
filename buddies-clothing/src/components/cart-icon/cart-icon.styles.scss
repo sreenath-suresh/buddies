@@ -1,0 +1,26 @@
+.cart-icon-container {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    .shopping-icon {
+      width: 45px;
+      height: 45px;
+
+    }
+  
+    .item-count {
+      position: absolute;
+      font-size: 13px;
+      bottom: 14px;
+      right: 12px;
+      font-family: 'Inter', sans-serif;
+//      font-family: 'Shadows Into Light Two', cursive;   
+ 
+    }
+  }
+  
