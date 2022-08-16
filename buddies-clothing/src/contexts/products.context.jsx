@@ -1,8 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
-
-import { addCollectionAndDocuments } from '../utils/firebase/firebase.utils.jsx';
-
-import SHOP_DATA from '../shop-data.js';
+import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils.jsx';
+//import { addCollectionAndDocuments } from '../utils/firebase/firebase.utils.jsx';
+//import SHOP_DATA from '../shop-data.js';
 
 export const ProductsContext = createContext({
   products: [],
@@ -11,10 +10,21 @@ export const ProductsContext = createContext({
 export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
+
+ useEffect(() =>{
+      const getCategoriesMap = async () => {
+        const categoryMap = await getCategoriesAndDocuments(); 
+        console.log("Hello");
+        console.log(categoryMap); 
+      };
+      getCategoriesMap();
+ },[]);
+
+
 // Trigger to update data into Firestore DB  
-//   useEffect(() => {
-//     addCollectionAndDocuments('collections', SHOP_DATA);
-//   }, []);
+  // useEffect(() => {
+  //   addCollectionAndDocuments('categories', SHOP_DATA);
+  // }, []);
 
   const value = { products };
   return (
