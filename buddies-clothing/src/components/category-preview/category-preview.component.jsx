@@ -8,9 +8,9 @@ const CategoryPreview = ({title, products}) => {
     return (
         <Fragment>
             <div className='category-preview-container'>
-                <h2>
+                <h1>
                     <Link className='title' to={title}>Explore {title[0].toUpperCase()+title.substring(1)}</Link>
-                </h2>
+                </h1>
                 <div className='preview'>
                     {products
                         .filter((_, idx) => idx < 4 )
