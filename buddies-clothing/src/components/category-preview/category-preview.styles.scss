@@ -1,0 +1,26 @@
+.category-preview-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  
+    .title {
+      margin-bottom: 30px;
+      margin-left:5px;
+      cursor: pointer;
+      letter-spacing: 1.5px;
+      
+    }
+
+    .title:hover {
+      text-decoration: underline;
+      text-underline-offset: 10px;
+
+    }
+  
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
+    }
+  }
+  
