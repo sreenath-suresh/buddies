@@ -2,14 +2,20 @@
 .checkout-container {
   width: 62%;
   min-height: 50vh;
-  min-width: 500px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 50px auto;
   border: 1px solid black;
   padding: 30px;
   border-radius: 25px;
+
+  @media screen and (max-width:955px) {
+    width: 90vw;
+    min-width: none;
+  }
+
 
   .checkout-header {
     width: 100%;
@@ -17,6 +23,11 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
+
+    @media screen and (max-width:955px) {
+      display: none;
+    }
+
 
     .header-block {
       text-transform: capitalize;
