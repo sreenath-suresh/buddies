@@ -1,0 +1,46 @@
+
+.order-page-containers {
+    width: 62%;
+    min-width: 320px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto 0;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 25px;
+  
+    .order-header {
+      width: 100%;
+      font-size: larger;
+      padding-bottom: 5px;
+      border-bottom: 1px solid darkgrey;
+  
+    }
+
+    .order-details {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      &:last-child {
+        font-weight: 700;
+        font-size: large;
+        border-top: 1px solid darkgrey;
+        margin-top: 10px;
+        padding-top: 5px;
+        margin-bottom: 10px;
+      }
+      
+    }
+  
+    .cart-total {
+      margin-top: 30px;
+      margin-right: auto;
+      font-size: 15px;
+    }
+
+
+  }
+  
