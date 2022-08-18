@@ -8,6 +8,13 @@
     border-radius: 15px;
     margin: 0 7.5px 15px;
     overflow: hidden;
+
+    @media screen and (max-width:800px) {
+      width:100%;
+      flex-direction: column;
+      order: 5;
+    }
+  
   
     &:hover {
       cursor: pointer;
@@ -64,6 +71,12 @@
         color: white;
         font-family: 'Shadows Into Light Two', cursive;
         letter-spacing: 2.5px;
+        text-align: center;
+
+        @media screen and (max-width:800px) {
+          width: 170px;
+        }
+    
       }
   
     }

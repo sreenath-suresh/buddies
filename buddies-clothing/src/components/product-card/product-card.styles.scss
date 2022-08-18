@@ -1,6 +1,5 @@
 .product-card-container {
     width: 100%;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -9,6 +8,26 @@
     padding: 5px;
     border-radius: 20px ;
     border: 1px black solid ;
+
+
+    @media screen and (max-width:800px) {
+      width: 45vw;
+      min-width: 0;
+      border: none;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+
+
+    
+      &:hover {
+        .image {
+          opacity: 1;
+        }
+        button {
+          opacity: 1;
+        }
+      }
+    }
   
     img {
       width: 100%;
@@ -24,10 +43,26 @@
       position: absolute;
       top: 255px;
       display: none;
+      
+      
+      @media screen and (max-width:800px) {
+        min-width: unset;
+        width: 130px;
+        display: block;
+        opacity: 1;
+        font-size: 13px;
+        padding: 0 15px;
+      }
+
+
 
       &:active {
         transform: translateY(2px);
       }
+
+
+
+  
     }
   
     &:hover {
@@ -49,6 +84,8 @@
       align-self: flex-end;
       font-size: 15px;
       padding-left: 15px;
+
+
       .name {
         width: 82%;;
         margin-bottom: 15px;
@@ -58,6 +95,22 @@
       .price {
         width: 18%;
             }
+
+      @media screen and (max-width:800px) {
+
+        .name{
+          width:65%
+        }
+
+        .price{
+          padding-right: 10px;
+          width: 35%;
+        }
+      }
+
     }
+
+
+
   }
   
